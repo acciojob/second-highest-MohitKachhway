@@ -9,8 +9,28 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
-			
+		
+			let n=arr.length
+			if(n<=1){
+				return -Infinity;
+			}
+			else if {
+				for(let i=1;i<n;++i){
+					if(arr[i]!==arr[i-1])
+					{
+						break;
+					}
+					else{
+						return -Infinity;
+					}
+				}
+			}
+			let result =arr.reduce((p,ele)=>{
+				if(ele>p)
+					p=ele;
+				return p;
+			},0)
+			return result;
 		}
 
 		function Main() {
